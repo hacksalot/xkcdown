@@ -1,0 +1,129 @@
+///**
+// SASS/SCSS stylesheet for [xkc(down)][1].
+// [1]: http://xkcdown.indevious.com
+// @module index.scss
+//*/
+
+.center {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+}
+
+html, body {
+  margin: 0; padding: 0;
+  height: 100%; width: 100%;
+  overflow: hidden;
+  background-color: #232323;
+}
+
+body {
+
+}
+
+html, body, input, textarea {
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI",
+               Arial, freesans, sans-serif; // a la GitHub
+}
+
+article {
+  margin: 0; padding: 0;
+  position: absolute;
+  top: 40px; left: 0;
+  right: 0; bottom: 0;
+}
+
+// Position the source and target containers and the fake background
+#source, #target, #background {
+  position: absolute;
+  left: 0; top: 0;
+  right: 0; bottom: 0;
+}
+
+#source {
+  z-index: 1;
+}
+
+#target {
+  z-index: 2;
+}
+
+#background {
+  z-index: 3;
+  background-image: url('img/xkcdown_static_float.png');
+  background-position: center center;
+  background-size: cover;
+}
+
+#isotope {
+  width: 7000px;
+  position: absolute;
+  top: 0; left: 50%;
+  margin-left: -3500px;
+}
+
+img {
+  display: block;
+  float: left;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#msg {
+  color: #95CBFF;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #000;
+  width: 310px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#popup-content p {
+  margin-top: 0;
+}
+
+.footnote {
+  font-size: 10px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+#permalink {
+  width: 250px;
+  font-size: 12px;
+}
+
+#progress {
+  width: 300px;
+  padding: 20px;
+  background-color: #000;
+  background-color: rgba(0,0,0,0.75);
+  color: #fff;
+  z-index: 4;
+
+  .progress {
+    background-color: #000;
+  }
+}
+
+// begin(override-bootstrap)
+#navbar li a {
+  font-size: 22px;
+  padding-bottom: 0;
+  padding-top: 14px;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover {
+  font-size: 1em;
+  color: #2480DA;
+}
+// end(override-bootstrap)

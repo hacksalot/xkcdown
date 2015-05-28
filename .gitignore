@@ -1,0 +1,10 @@
+# Ignore hidden folders #
+# This takes care of .tmp, .sass-cache, and many others #
+.*/
+
+dist/
+node_modules/
+bower_components/
+img/x/*.png
+MANIFEST-WORKING.xml
+assets/screenshots

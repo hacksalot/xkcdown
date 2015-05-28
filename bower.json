@@ -1,0 +1,41 @@
+{
+  "name": "xkc(down)",
+  "version": "0.1.0",
+  "authors": [
+    "James Devlin <james@indevious.com>"
+  ],
+  "description": "An interactive xkcd-inspired visualization in three dimensions.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/devlinjd/xkcdown.git"
+  },  
+  "main": "index.html",
+  "keywords": [
+    "xkc(down)",
+    "xkcd",
+    "WebGL",
+    "3D",
+    "HTML",
+    "Extrovert.js",
+    "Three.js",
+    "Physijs",
+    "JavaScript"
+  ],
+  "ignore": [
+    ".git"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/devlinjd/xkcdown",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "imagesloaded": "~3.1.8",
+    "packery": "~1.3.2",
+    "bootstrap": "~3.3.4",
+    "seedrandom": "~2.3.11",
+    "extrovert.js": "~0.1.3"
+  },
+  "resolutions": {
+    "threejs": "5c7e0df9b1"
+  }
+}
