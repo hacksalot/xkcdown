@@ -33,6 +33,6 @@ An interactive 3D visualization of popular webcomic [xkcd][2] with support for p
 
 MIT
 
-[1]: http://xkcdown.indevious.com
-[2]: http://xkcd.com
-[3]: http://xkcdown.indevious.com/img/xkcdown_wall.jpg
+[1]: https://xkcdown.indevious.com
+[2]: https://xkcd.com
+[3]: https://xkcdown.indevious.com/img/xkcdown_wall.jpg

@@ -1,5 +1,5 @@
 /**
-Site-specific JavaScript file for xkc(down) (http://xkcdown.indevious.com).
+Site-specific JavaScript file for xkc(down) (https://xkcdown.indevious.com).
 @module xkcdown-site.js
 @author James Devlin (james@indevious.com)
 */
