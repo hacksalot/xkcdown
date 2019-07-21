@@ -109,7 +109,7 @@ Site-specific JavaScript file for xkc(down) (http://xkcdown.indevious.com).
         bkcolor: 0x008cff,
         scene: { items: [ { type: 'box', pos: [0,0,0], dims: [40000,10,40000]/*, rot: [0.35,0,0]*/, mass: 0, color: 0x11cc00 } ] },
         transform: [
-          { type: 'extrude', src: 'img', container: '#source', depth: 'height' }
+          { type: 'extrude', src: 'img', container: '#source', depth: 'height', align: 'mirror-y' }
         ],
         gravity: [0,-200,50],
         camera: {

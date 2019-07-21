@@ -1,5 +1,5 @@
 {
-  "name": "xkc(down)",
+  "name": "xkcdown",
   "version": "0.1.0",
   "authors": [
     "James Devlin <james@indevious.com>"
@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/devlinjd/xkcdown.git"
-  },  
+  },
   "main": "index.html",
   "keywords": [
     "xkc(down)",
@@ -36,6 +36,6 @@
     "extrovert.js": "~0.1.3"
   },
   "resolutions": {
-    "threejs": "5c7e0df9b1"
+    "threejs": "da2936540a"
   }
 }
