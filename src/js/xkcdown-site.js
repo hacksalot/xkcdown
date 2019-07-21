@@ -225,6 +225,10 @@ Site-specific JavaScript file for xkc(down) (https://xkcdown.indevious.com).
 
   function start( srcSelector ) {
     var $cont = $( srcSelector ).packery({ itemSelector: 'img', isOriginTop: true, isInitLayout: false });
+    $('#target').contextmenu(function(e){
+      e.preventDefault();
+      return false;
+    });
     $cont.packery( 'once', 'layoutComplete', function( items ) {
       var ret = extrovert.init( '#target', options ); // Go!
       if( !ret ) {
