@@ -2,12 +2,12 @@
   "name": "xkcdown",
   "version": "0.1.0",
   "authors": [
-    "James Devlin <james@indevious.com>"
+    "James Devlin <james@indevious.com> (https://deskchained.com)"
   ],
   "description": "An interactive xkcd-inspired visualization in three dimensions.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/devlinjd/xkcdown.git"
+    "url": "git://github.com/hacksalot/xkcdown.git"
   },
   "main": "index.html",
   "keywords": [
@@ -25,7 +25,7 @@
     ".git"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/devlinjd/xkcdown",
+  "homepage": "https://github.com/hacksalot/xkcdown",
   "private": true,
   "dependencies": {
     "jquery": "~2.1.3",

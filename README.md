@@ -27,7 +27,7 @@ An interactive 3D visualization of popular webcomic [xkcd][2] with support for p
 ## Credits ##
 
 - Original comics by Randall Munroe (http://xkcd.com).
-- "xkc(down)" concept and code by James Devlin (james@indevious.com).
+- "xkcdown" concept and code by James Devlin (https://deskchained.com).
 
 ## License ##
 

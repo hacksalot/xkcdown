@@ -11,23 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devlinjd/xkcdown.git"
+    "url": "https://github.com/hacksalot/xkcdown.git"
   },
   "keywords": [
     "3D",
-    "xkc(down)",
     "xkcd",
     "WebGL",
     "Three.js",
     "Physijs",
     "JavaScript"
   ],
-  "author": "James Devlin",
+  "author": "James Devlin <hacksalot@indevious.com> (https://deskchained.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devlinjd/xkcdown/issues"
+    "url": "https://github.com/hacksalot/xkcdown/issues"
   },
-  "homepage": "https://github.com/devlinjd/xkcdown",
+  "homepage": "https://github.com/hacksalot/xkcdown",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
