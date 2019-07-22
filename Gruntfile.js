@@ -17,6 +17,8 @@ To package and serve a quick debug build, use:
 @module Gruntfile.js
 */
 
+var serveStatic = require('serve-static');
+
 module.exports = function(grunt) {
 
   var opts = {
@@ -51,7 +53,7 @@ module.exports = function(grunt) {
                 req.url.match(/\.(\w+)$/) || res.setHeader( 'Content-Type', 'text/html' );
                 next();
               },
-              connect.static(options.base[0])
+              serveStatic(options.base[0])
             ];
           },
           base: 'dist'
