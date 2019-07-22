@@ -195,14 +195,14 @@ module.exports = function(grunt) {
     },
 
     // Output a custom lodash build (~500 bytes instead of 50k)
-    lodash: {
-      main: {
-        dest: '.tmp/js/lodash.custom.js',
-        options: {
-          include: ['escape']
-        }
-      }
-    },
+    // lodash: {
+    //   main: {
+    //     dest: '.tmp/js/lodash.custom.js',
+    //     options: {
+    //       include: ['escape']
+    //     }
+    //   }
+    // },
 
     sass: {
       options: {
@@ -232,11 +232,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-html-build');
   grunt.loadNpmTasks('grunt-contrib-jst');
-  grunt.loadNpmTasks('grunt-lodash');
   grunt.loadNpmTasks('grunt-include-replace');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
-  var tasks = ['clean', 'jshint', 'copy:physijs', 'uglify:xkcdown', 'lodash',
+  var tasks = ['clean', 'jshint', 'copy:physijs', 'uglify:xkcdown',
     'jst', 'concat:deps', 'copy:core', 'copy:ammo', 'htmlbuild',
     'includereplace', 'sass', 'copy:images'];
 

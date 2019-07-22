@@ -40,7 +40,6 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-html-build": "^0.7.1",
     "grunt-include-replace": "^5.0.0",
-    "grunt-lodash": "^0.4.0",
     "lodash-cli": "^4.17.5",
     "serve-static": "^1.14.1"
   },
