@@ -1,4 +1,5 @@
-# xkc(down) #
+xkcdown
+===
 
 An interactive 3D visualization of popular webcomic [xkcd][2] with support for physics, camera movement, WebGL rendering with Canvas fallback, and smashing xkcd comics into stacks of other comics. **[View the live demo][1]**.
 

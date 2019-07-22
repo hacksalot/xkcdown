@@ -1,5 +1,5 @@
 {
-  "name": "xkc(down)",
+  "name": "xkcdown",
   "version": "0.1.0",
   "description": "A visualization of Randall Munroe's xkcd in three dimensions.",
   "main": "Gruntfile.js",
