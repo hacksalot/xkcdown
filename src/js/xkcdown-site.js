@@ -71,7 +71,7 @@ Site-specific JavaScript file for xkc(down) (https://xkcdown.indevious.com).
 
     // Set up xkc(down) options
     xkcdown_opts = {
-      qty: parseInt(urlParams.qty) || 100,
+      qty: parseInt(urlParams.qty) || 200,
       scene: urlParams.scene || 'wall',
       seed: urlParams.seed || randomString(32)
     };
@@ -105,28 +105,33 @@ Site-specific JavaScript file for xkc(down) (https://xkcdown.indevious.com).
     var specific_options = null;
     if( xkcdown_opts.scene === 'wall' ) {
       specific_options = {
-        lights: [ { type: 'hemisphere', color: 0xd6eeff, groundColor: 0xe3f7e1, intensity: 0.75 } ],
-        bkcolor: 0x008cff,
+        lights: [
+          { type: 'ambient', color: 0xFFFFFF, intensity: 0.1 },
+          { type: 'directional', color: 0xFFFFFF, intensity: 0.65, pos: [100,100,100], target: [0,0,0] }
+          //{ type: 'hemisphere', color: 0x000000, groundColor: 0xffffff, intensity: 0.65 },
+          //{ type: 'point', color: 0xff2323, intensity: 1, distance: 10000, pos: [0,2000,8000] }
+        ],
+        bkcolor: 0x000C21,
         scene: { items: [ { type: 'box', pos: [0,0,0], dims: [40000,10,40000]/*, rot: [0.35,0,0]*/, mass: 0, color: 0x11cc00 } ] },
         transform: [
           { type: 'extrude', src: 'img', container: '#source', depth: 'height', align: 'mirror-y' }
         ],
-        gravity: [0,-200,50],
+        gravity: [0,-200,100],
         camera: {
           far: 200000,
-          position: [0,55,2000],
-          rotation: [0.25,0,0]
+          position: [0,55,8000], // TODO: Not used with avatar below
+          rotation: [0.20,0,0]
         },
         avatar: {
           enabled: true,
           type: 'box',
           dims: [100,100,100],
-          pos: [0,55,2000],
+          pos: [1500,55,8000],
           visible: false,
           color: 0x000000,
           opacity: 0.25,
           transparent: true,
-          mass: 10
+          mass: 0
         },
         controls: { yFloor: 55.0 },
         init_cam_opts: { position: [0,2000,800] }
