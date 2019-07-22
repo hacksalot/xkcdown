@@ -67,12 +67,12 @@ module.exports = function(grunt) {
       },
       deps: {
         src: [
-          'bower_components/imagesloaded/imagesloaded.pkgd<%= jsMinExt %>.js',
-          'bower_components/packery/dist/packery.pkgd<%= jsMinExt %>.js',
-          '.tmp/js/lodash.custom<%= jsMinExt %>.js',
-          'bower_components/threejs/build/three<%= jsMinExt %>.js',
-          'bower_components/physijs/physi.js',
-          'bower_components/extrovert.js/dist/extrovert<%= jsMinExt %>.js',
+          'node_modules/imagesloaded/imagesloaded.pkgd<%= jsMinExt %>.js',
+          'node_modules/packery/dist/packery.pkgd<%= jsMinExt %>.js',
+          'src/js/lodash.custom.min.js',
+          //'node_modules/three/build/three<%= jsMinExt %>.js',
+          //'node_modules/physijs/physi.js',
+          'node_modules/extrovert.js/dist/extrovert<%= jsMinExt %>.js',
           '.tmp/js/jst.js',
           '.tmp/js/xkcdown-site<%= jsMinExt %>.js'
         ],
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
       xkcdown: {
         files: {
           '.tmp/js/xkcdown-site.min.js': ['src/js/xkcdown-site.js'],
-          'dist/js/pjsw.js': ['bower_components/physijs/physijs_worker.js']
+          'dist/js/pjsw.js': ['node_modules/extrovert.js/dist/physijs_worker.js']
         }
       }
     },
@@ -130,7 +130,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: true,
-          src: ['bower_components/ammo.js/builds/ammo.js'],
+          src: ['node_modules/ammo.js/ammo.js'],
           dest: '<%= folders.dest %>/js'
         }]
       },
@@ -138,7 +138,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: true,
-          src: ['bower_components/physijs/physijs_worker.js'],
+          src: ['node_modules/extrovert.js/dist/physijs_worker.js'],
           dest: 'dist/js',
           rename: function( dest, src ) {
             return 'dist/js/pjsw.js';
