@@ -247,13 +247,13 @@ module.exports = function(grunt) {
     }
   }
 
-  grunt.registerTask('build', 'Build the xkc(down) web demo.', function( config ) {
+  grunt.registerTask('build', 'Build the xkcdown web demo.', function( config ) {
     config = config || 'release';
     adjust( config );
     grunt.task.run( tasks );
   });
 
-  grunt.registerTask('serve', 'Build and serve the xkc(down) web demo.', function( config ) {
+  grunt.registerTask('serve', 'Build and serve the xkcdown web demo.', function( config ) {
     config = config || 'release';
     adjust( config );
     tasks.push('connect:dist');
