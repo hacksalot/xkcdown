@@ -44,4 +44,4 @@ MIT
 
 [1]: https://xkcdown.indevious.com
 [2]: https://xkcd.com
-[3]: https://xkcdown.indevious.com/img/xkcdown_wall.jpg
+[3]: https://xkcdown.indevious.com/img/xkcdown_static_float.png

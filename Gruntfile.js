@@ -138,12 +138,19 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: true,
-          src: ['node_modules/extrovert.js/dist/physijs_worker.js'],
+          src: ['node_modules/physijs/physijs_worker.js'],
           dest: 'dist/js',
           rename: function( dest, src ) {
             return 'dist/js/pjsw.js';
           }
-        }]
+        },
+        {
+          expand: true,
+          flatten: true,
+          src: ['node_modules/physijs/physi.js'],
+          dest: 'dist/js'
+        }
+      ]
       },
       // Copy images (1500+).
       images: {
